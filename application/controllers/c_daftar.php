@@ -5,11 +5,11 @@
 		
 		function __construct(){
 			parent::__construct();
-			$this->load->view("login.html");
+			$this->load->helper('url');
 		}
 
 		public function index(){
-			
+			$this->load->view("v_daftar");
 		}
 
 	}
