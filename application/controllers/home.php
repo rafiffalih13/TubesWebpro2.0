@@ -1,7 +1,7 @@
 <?php 
 	defined('BASEPATH') OR exit('No direct script access allowed');
 
-	class Belajar extends CI_Controller {
+	class home extends CI_Controller {
 		
 		function __construct(){
 			parent::__construct();
@@ -9,7 +9,7 @@
 		}
 
 		public function index(){
-			$this->load->view('v_home');
+			
 		}
 
 	}
