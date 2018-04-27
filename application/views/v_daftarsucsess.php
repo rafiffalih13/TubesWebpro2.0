@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  dir="ltr">
 <head>
 	<title>Daftar Sucsess</title>
 	<meta charset="UTF-8">
@@ -14,7 +14,7 @@
 <!--===============================================================================================-->
 </head>
 <body>
-	
+
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
@@ -27,12 +27,12 @@
 				</div>
 				<h3>Your form was successfully submitted!</h3>
 
-				<p><?php echo anchor('form', 'Try it again!'); ?></p>
+				<p><?php echo anchor('c_daftar', 'Try it again!'); ?></p>
 			</div>
 		</div>
 	</div>
-	
-	
+
+
 
 </body>
 </html>

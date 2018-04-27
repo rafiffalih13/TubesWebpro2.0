@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
 	<title>Daftar Pembeli</title>
 	<meta charset="UTF-8">
@@ -13,8 +13,8 @@
 	<script type="<?php echo base_url();?>assets/js/jquery.validate.js"></script>
 <!--===============================================================================================-->
 </head>
-<body>	
-	<?php echo form_open('c_daftar/simpan');?>
+<body>
+
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
@@ -24,8 +24,9 @@
 							Big Shop
 						</span>
 					</a>
-					
+
 				</div>
+					<?php echo form_open('c_daftar/simpan');?>
 				<form class="login100-form validate-form" method="POST" action="<?php echo base_url(). 'index.php/c_daftar/simpan'; ?>">
 					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
 						<span class="label-input100">Username</span>
@@ -56,19 +57,19 @@
 						<input class="input100" type="text" name="email" id="email" placeholder="Enter Email">
 						<span class="focus-input100"></span>
 					</div>
-					
+
 					<div class="wrap-input100 validate-input m-b-26" data-validate="Nomor Handphone is required">
 						<span class="label-input100">Nomor Handphone</span>
 						<input class="input100" type="text" name="no_hp" id="no_hp" placeholder="Enter Phone Number">
 						<span class="focus-input100"></span>
 					</div>
-					
+
 					<div class="wrap-input100 validate-input m-b-26" data-validate="Alamat is required">
 						<span class="label-input100">Alamat</span>
 						<input class="input100" type="text" name="alamat" id="alamat" placeholder="Enter Address">
 						<span class="focus-input100"></span>
 					</div>
-					
+
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn" type="submit">
 							Daftar
@@ -78,8 +79,8 @@
 			</div>
 		</div>
 	</div>
-	
-	
+
+
 
 </body>
 </html>
