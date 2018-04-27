@@ -5,11 +5,40 @@
 		
 		function __construct(){
 			parent::__construct();
-			$this->load->helper('url');
+			$this->load->helper(array('form', 'url'));
+			$this->load->library('form_validation');
 		}
 
 		public function index(){
-			$this->load->view("v_daftar");
+			$this->load->view("v_daftar");	
+		}
+
+		function simpan(){
+			$username = $this->input->post('username');
+			$pass = $this->input->post('pass');
+			$nama = $this->input->post('nama');
+			$email = $this->input->post('email');
+			$no_hp = $this->input->post('no_hp');
+			$alamat = $this->input->post('alamat');
+
+			$data = array(
+				'username' => $username,
+				'password' => $pass,
+				'nama' => $nama,
+				'email' => $email,
+				'no_hp' => $no_hp,
+				'alamat' => $alamat
+			);
+
+
+			$cek = $this->m_akun_pembeli->cekuser($username)->return();
+
+			if ($cek->result_array()) {
+				$this->load->view("v_daftarerror");
+			}else{
+				$this->m_akun_pembeli->simpan_data($data, 'akun_pembeli');
+				redirect('home/index');
+			}
 		}
 
 	}
