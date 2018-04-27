@@ -14,6 +14,7 @@
 <!--===============================================================================================-->
 </head>
 <body>	
+	<?php echo form_open('c_daftar/simpan');?>
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
