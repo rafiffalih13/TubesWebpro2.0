@@ -22,7 +22,6 @@
 			$no_hp = $this->input->post('no_hp');
 			$alamat = $this->input->post('alamat');
 			$cek = $this->m_akun_pembeli->cekuser($username);
-			$cek = $cek->username;
 
 			if ($cek != $username) {
 				$data = array(

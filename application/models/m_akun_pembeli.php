@@ -11,9 +11,8 @@
 
  	public function cekuser($user){
  		$this->db->select('username');
-		$this->db->from('akun_pembeli');
- 		$this->db->where('username = ', $user);
- 		$query = $this->db->get();
+ 		$this->db->where('username', $user);
+ 		$query = $this->db->get('akun_pembeli');
  		return $query->result();
  	}
  }
