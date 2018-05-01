@@ -10,15 +10,15 @@
     <title>Home</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url();?>assets/css/bootstrap.min.css" rel="stylesheet">
 
     
 
     <!-- CSS NAVBAR -->
-    <link rel="stylesheet" type="text/css" href="css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/navbar.css" />
     
     <!-- ICON -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 
 
   </head>
@@ -29,7 +29,7 @@
     
     <nav class="navbar text-white fixed-top navbar-expand-lg navbar-info bg-info fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="" width="auto" height="35"></a>
+        <a class="navbar-brand" href="index.html"><img src="<?php echo base_url();?>assets/img/logo.png" alt="" width="auto" height="35"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="coba fa fa-reorder"></span>
         </button>
@@ -59,7 +59,7 @@
           <ul class="navbar-nav ml-auto samping">
             <li class="nav-item" style="padding-right: 7px"><a href="#band" style="word-spacing: 3px" class="nav-link"><i class="fa fa-shopping-cart" style="font-size:23px"></i><span> </span>KERANJANG</a></li>
             <li class="nav-item" style="padding-right: 7px"><a href="<?php echo site_url('c_home/view_daftar') ?>" style="word-spacing: 3px" class="nav-link"><i class="fa fa-user-plus" style="font-size:18px"></i><span> </span>DAFTAR</a></li>
-            <li class="nav-item"><a href="#band" style="word-spacing: 3px" class="nav-link"><i class="fa fa-sign-in" style="font-size:19px"></i><span> </span>MASUK</a></li>
+            <li class="nav-item"><a href="<?php echo site_url('c_home/view_login') ?>" style="word-spacing: 3px" class="nav-link"><i class="fa fa-sign-in" style="font-size:19px"></i><span> </span>MASUK</a></li>
           </ul>
         </div>
       </div>
