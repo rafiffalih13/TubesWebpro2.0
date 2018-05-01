@@ -25,9 +25,11 @@
 						</span>
 					</a>
 				</div>
-				<h3>Your form was successfully submitted!</h3>
+				<div style="text-align: center;">	
+					<h3>Your form was successfully submitted!</h3>
 
-				<p><?php echo anchor('c_daftar', 'Try it again!'); ?></p>
+					<p><?php echo anchor('c_daftar', 'Try it again!'); ?></p>
+				</div>
 			</div>
 		</div>
 	</div>
