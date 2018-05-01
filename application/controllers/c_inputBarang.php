@@ -22,14 +22,10 @@ class c_inputBarang extends CI_Controller {
 
           $this->load->library('upload', $config);
 
-          if ( ! $this->upload->do_upload())
-          {
+          if ( ! $this->upload->do_upload()){
                   $error = array('error' => $this->upload->display_errors());
-
                   $this->load->view('v_inputBarang', $error);
-          }
-          else
-          {
+          }else{
                   $file = $this->upload->data();
                   $id = $this->m_inputBarang->selectID('barang');
                   $id = $id->id_barang;
