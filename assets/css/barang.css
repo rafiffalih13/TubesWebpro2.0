@@ -1,0 +1,12 @@
+.col{
+  padding-top: 150px;
+}
+
+#btnadd{
+  width: 600px;
+}
+
+#nama, #harga, #stock{
+  background-color: white;
+  color: black;
+}

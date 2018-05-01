@@ -11,7 +11,7 @@
 		}
 
 		public function index(){
-			$this->load->view("v_daftar");
+			$this->load->view("daftar");
 		}
 
 		function simpan(){
@@ -37,6 +37,10 @@
 			}else{
 				echo "gagal";
 			}
+		}
+
+		public function view_home(){
+			redirect('c_home/index');
 		}
 
 	}

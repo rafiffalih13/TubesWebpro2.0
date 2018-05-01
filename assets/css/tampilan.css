@@ -1,0 +1,30 @@
+.kiri{
+    margin-left : 20px !important;
+    margin-right : 10px !important;
+}
+
+.cari{
+    margin-left : 10px !important;
+    width: 500px !important;
+}
+
+.samping{
+    margin-right : 10px !important;
+}
+
+.nv{
+    width : 1393px;
+    height: 50px;
+}
+
+.imgproduk{
+    width: 90%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.imgProduct{
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}

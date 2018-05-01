@@ -1,0 +1,45 @@
+#myCarousel{
+	margin-bottom: 50px;
+	background-color: gray;
+	/*width: 102.6%;*/
+	/*right: 1.5%;*/
+	max-height: 700px;
+	max-width: auto;
+	overflow: hidden;
+}
+#img-carousel{
+	max-height: 700px;
+	max-width: 1200px;
+	overflow: hidden;
+}
+#category-bar{
+	/*background-color: lightgray;*/
+	padding: 0px 20px 0px 20px;
+	width: 100%;
+}
+#category{
+	/*font-weight: bold;*/
+	color: #343a40;
+	/*font-family: "Comic Sans MS";*/
+}
+#item{
+	text-align: center;
+	margin: 20px 20px 30px 20px;
+	/*background-color: gray;*/
+	border: 1px solid gray;
+	color: black;
+	text-decoration: none;
+	
+}
+#item-img{
+	padding: 20px 0px 0px 0px;
+	height: auto;
+	width: 100%;
+	overflow: hidden;
+	max-width: 200px;
+	max-height: 200px;
+}
+#item:hover{
+	color: black;
+	text-decoration: none;
+}
