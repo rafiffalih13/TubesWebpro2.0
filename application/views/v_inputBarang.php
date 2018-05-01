@@ -1,5 +1,5 @@
 <?php
-  include 'navbar.php';
+  include 'navPenjual.php';
  ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">

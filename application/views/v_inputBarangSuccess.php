@@ -1,5 +1,5 @@
 <?php
-  include 'navbar.php';
+  include 'navPenjual.php';
  ?>
  <!DOCTYPE html>
  <html lang="en" dir="ltr">
@@ -26,7 +26,7 @@
        </div>
        <div style="text-align:center;">
          <a href="<?php echo base_url()."index.php/c_inputBarang"; ?>"> Input Barang Lagi </a>
-          | 
+          |
          <a href="<?php echo base_url(); ?>">Kembali ke halaman utama </a>
        </div>
 
