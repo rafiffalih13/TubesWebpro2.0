@@ -58,7 +58,7 @@
           </ul>
           <ul class="navbar-nav ml-auto samping">
             <li class="nav-item" style="padding-right: 7px"><a href="#band" style="word-spacing: 3px" class="nav-link"><i class="fa fa-shopping-cart" style="font-size:23px"></i><span> </span>KERANJANG</a></li>
-            <li class="nav-item" style="padding-right: 7px"><a href="#myPage" style="word-spacing: 3px" class="nav-link"><i class="fa fa-user-plus" style="font-size:18px"></i><span> </span>DAFTAR</a></li>
+            <li class="nav-item" style="padding-right: 7px"><a href="<?php echo site_url('c_home/view_daftar') ?>" style="word-spacing: 3px" class="nav-link"><i class="fa fa-user-plus" style="font-size:18px"></i><span> </span>DAFTAR</a></li>
             <li class="nav-item"><a href="#band" style="word-spacing: 3px" class="nav-link"><i class="fa fa-sign-in" style="font-size:19px"></i><span> </span>MASUK</a></li>
           </ul>
         </div>

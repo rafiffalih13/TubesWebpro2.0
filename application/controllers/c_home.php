@@ -16,5 +16,13 @@
 			$this->load->view('v_home',$data);
 		}
 
+		public function view_login(){
+			$this->load->view();
+		}
+
+		public function view_daftar(){
+			redirect('c_daftar/index');
+		}
+
 	}
 ?>
