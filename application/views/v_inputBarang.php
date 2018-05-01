@@ -1,5 +1,5 @@
 <?php
-  include 'navbar.html';
+  include 'navbar.php';
  ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -28,12 +28,12 @@
   </head>
   <body>
         <div class="container">
-    					<span id="judul">
-    						Input Barang
-    					</span>
-
+          <div class="login100-form-title" style="background-image: url(<?php echo base_url();?>assets/img/static1.squarespace.com.jpg);">
+            <span id="judul">
+              <h1 style="color: white;"><b>Input Barang</b></h1>
+            </span>
+          </div>
                 <?php echo form_open_multipart('c_inputBarang/do_upload');?>
-
               <form id="form2" method="post">
                 <table class="table" border="0">
                   <tr>
