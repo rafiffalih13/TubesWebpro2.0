@@ -20,7 +20,7 @@
     
     <!-- ICON -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 
   </head>
 
@@ -85,12 +85,13 @@
         
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+            <a href="#"><img class="card-img-top" src="<?php echo base_url();?>assets/images/<?php echo $b->images;?>" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project One</a>
+                <a href="#"><?php echo $b->nama_barang;?></a>
               </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+              <p style="font-size: 12px"><?php echo $b->nama_toko;?></p>
+              <p class="card-text"><?php echo $b->harga;?></p>
               <a href="#" class="btn btn-primary">Learn More</a>
             </div>
           </div>
@@ -119,7 +120,8 @@
               <h4 class="card-title">
                 <a href="#">Project One</a>
               </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+              <p style="font-size: 12px">RP 100</p>
+              <p class="card-text">RP 100.000</p>
               <a href="#" class="btn btn-primary">Learn More</a>
             </div>
           </div>
@@ -142,7 +144,7 @@
               <h4 class="card-title">
                 <a href="#">Project Three</a>
               </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
+              <p class="card-text">RP 100.000</p>
             </div>
           </div>
         </div>
