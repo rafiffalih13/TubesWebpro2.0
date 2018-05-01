@@ -40,11 +40,11 @@
                    KATEGORI
                 </a>
                 <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdownPortfolio">
-                  <a class="dropdown-item" href="portfolio-1-col.html">1 Column Portfolio</a>
-                  <a class="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>
-                  <a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
-                  <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
-                  <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
+                  <a class="dropdown-item" href="#">komputer</a>
+                  <a class="dropdown-item" href="#">Pakaian</a>
+                  <a class="dropdown-item" href="#">Makanan</a>
+                  <a class="dropdown-item" href="#">Kendaraan</a>
+                  <a class="dropdown-item" href="#">Furniture</a>
                 </div>
               </li>
           </ul>

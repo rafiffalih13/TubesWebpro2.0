@@ -10,15 +10,15 @@
     <title>Home</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url();?>assets/css/bootstrap.min.css" rel="stylesheet">
 
     
 
     <!-- CSS NAVBAR -->
-    <link rel="stylesheet" type="text/css" href="css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/navbar.css" />
     
     <!-- ICON -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 
 
   </head>
@@ -29,7 +29,7 @@
     
     <nav class="navbar text-white fixed-top navbar-expand-lg navbar-info bg-info fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="" width="auto" height="35"></a>
+        <a class="navbar-brand" href="index.html"><img src="<?php echo base_url();?>assets/img/logo.png" alt="" width="auto" height="35"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="coba fa fa-reorder"></span>
         </button>
@@ -49,11 +49,10 @@
                  Akun
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                <a class="dropdown-item" href="portfolio-1-col.html">1 Column Portfolio</a>
-                <a class="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>
-                <a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
-                <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
-                <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
+                <a class="dropdown-item" href="#">Profil</a>
+                <a class="dropdown-item" href="#">Daftar Produk</a>
+                <a class="dropdown-item" href="#">Pambah Produk</a>
+                <a class="dropdown-item" href="#">Logout</a>
               </div>
             </li>
             <li class="nav-item" style="margin-left: 15px"><a href="#band" style="word-spacing: 3px" class="nav-link"><span> </span><span>  </span><span>  </span></a></li>
