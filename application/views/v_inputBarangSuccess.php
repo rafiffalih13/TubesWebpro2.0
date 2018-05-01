@@ -24,7 +24,12 @@
            <h1 style="color: white;"><b>BARANG SUKSES DI INPUTKAN</b></h1>
          </span>
        </div>
-       <a href="<?php echo base_url()."index.php/c_inputBarang"; ?>"> Input Barang Lagi </a>
+       <div style="text-align:center;">
+         <a href="<?php echo base_url()."index.php/c_inputBarang"; ?>"> Input Barang Lagi </a>
+          | 
+         <a href="<?php echo base_url(); ?>">Kembali ke halaman utama </a>
+       </div>
+
      </div>
    </body>
  </html>
