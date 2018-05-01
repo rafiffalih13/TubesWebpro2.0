@@ -25,7 +25,7 @@
 			<div class="col"></div>
 			<!-- Start isi Konten -->
 			<div class="col-4 center">
-				<a href="index.html">
+				<a href="<?php echo site_url('c_daftar/view_home') ?>">
 					<img class="logo" src="<?php echo base_url();?>assets/img/logo1.png">
 				</a>
 				<div class="daftar">

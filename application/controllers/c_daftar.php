@@ -39,5 +39,9 @@
 			}
 		}
 
+		public function view_home(){
+			redirect('c_home/index');
+		}
+
 	}
 ?>
