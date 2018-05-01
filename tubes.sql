@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 26, 2018 at 04:44 PM
+-- Generation Time: May 01, 2018 at 09:47 AM
 -- Server version: 10.1.28-MariaDB
 -- PHP Version: 7.1.11
 
@@ -37,6 +37,13 @@ CREATE TABLE `akun_pembeli` (
   `alamat` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `akun_pembeli`
+--
+
+INSERT INTO `akun_pembeli` (`username`, `password`, `nama`, `email`, `no_hp`, `alamat`) VALUES
+('', '', '', '', '', '');
+
 -- --------------------------------------------------------
 
 --
@@ -60,6 +67,7 @@ CREATE TABLE `akun_penjual` (
 
 CREATE TABLE `barang` (
   `id_barang` varchar(10) NOT NULL,
+  `username` varchar(20) NOT NULL,
   `nama_barang` varchar(50) NOT NULL,
   `images` varchar(100) NOT NULL,
   `harga` int(10) NOT NULL,
