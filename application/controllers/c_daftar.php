@@ -11,7 +11,7 @@
 		}
 
 		public function index(){
-			$this->load->view("v_daftar");
+			$this->load->view("daftar");
 		}
 
 		function simpan(){
