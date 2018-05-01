@@ -49,18 +49,45 @@
                  Akun
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                <a class="dropdown-item" href="#">Profil</a>
+                <a class="dropdown-item" data-target='#edit'>Profil</a>
                 <a class="dropdown-item" href="#">Daftar Produk</a>
                 <a class="dropdown-item" href="#">Pambah Produk</a>
                 <a class="dropdown-item" href="#">Logout</a>
               </div>
             </li>
-            <li class="nav-item" style="margin-left: 15px"><a href="#band" style="word-spacing: 3px" class="nav-link"><span> </span><span>  </span><span>  </span></a></li>
+            <li class="nav-item" style="margin-left: 15px"><a href="#" style="word-spacing: 3px" class="nav-link"><span> </span><span>  </span><span>  </span></a></li>
           </ul>
         </div>
       </div>
     </nav>
+    <div id="edit" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"></button>
+                    <h4 class="modal-title">Edit Data Mahasiswa</h4>
+                </div>
+                <?php echo form_open("home/edit"); ?>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label class="control-label" for="nim">id</label>
+                        <input type="text" class="form-control" disabled value="dfgd" id="nim">
+                        <input type="hidden" name="nim" class="form-control" value="dfgd" id="nim" required>
 
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="nama">Nama</label>
+                        <input type="text" name="nama" class="form-control" value="dgfg" id="nama" required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="btn btn-danger">Close</button>
+                    <input type="submit" class="btn btn-primary" name="edit" value="Edit">
+                </div>
+                <?php echo form_close(); ?>
+            </div>
+        </div>
+    </div>
 
 
 
