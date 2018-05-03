@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 01, 2018 at 09:47 AM
+-- Generation Time: May 03, 2018 at 07:56 PM
 -- Server version: 10.1.28-MariaDB
 -- PHP Version: 7.1.11
 
@@ -59,6 +59,13 @@ CREATE TABLE `akun_penjual` (
   `no_hp` varchar(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `akun_penjual`
+--
+
+INSERT INTO `akun_penjual` (`username`, `password`, `nama_penjual`, `nama_toko`, `email`, `no_hp`) VALUES
+('orang', 'orang', 'bukanorang', 'tokoorang', 'orang@orang.com', '085608560856');
+
 -- --------------------------------------------------------
 
 --
@@ -71,8 +78,16 @@ CREATE TABLE `barang` (
   `nama_barang` varchar(50) NOT NULL,
   `images` varchar(100) NOT NULL,
   `harga` int(10) NOT NULL,
-  `deskripsi` varchar(100) NOT NULL
+  `deskripsi` varchar(100) NOT NULL,
+  `kategori` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `barang`
+--
+
+INSERT INTO `barang` (`id_barang`, `username`, `nama_barang`, `images`, `harga`, `deskripsi`, `kategori`) VALUES
+('1', 'orang', 'laptop', 'laptop.jpg', 100000, 'wah ga tau', 'komputer');
 
 --
 -- Indexes for dumped tables
