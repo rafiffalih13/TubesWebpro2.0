@@ -7,6 +7,7 @@ class c_inputBarang extends CI_Controller {
     parent::__construct();
     $this->load->model('m_inputBarang');
     $this->load->helper(array('form', 'url'));
+    $this->load->library('session');
   }
 
   public function index(){

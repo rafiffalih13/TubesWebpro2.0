@@ -27,7 +27,14 @@
   <body>
 
     <?php
+      if($this->session != ''){
+        include_once("navPembeli.php");
+        
+      }else{
         include_once("navbar.php");
+      }
+
+        
     ?>
 
     <header>
