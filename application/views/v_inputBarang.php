@@ -61,6 +61,21 @@
                   </tr> <br>
                   <tr>
                     <div>
+                      Kategori :
+                    </div>
+                  </tr><br>
+                  <tr>
+                    <div>
+                      <select class="dropdown" name="kategori" required>
+                        <option value=""></option>
+                        <option value="pakaian">Pakaian</option>
+                        <option value="komputer">Komputer</option>
+                        <option value="makanan">Makanan</option>
+                      </select>
+                    </div>
+                  </tr> <br>
+                  <tr>
+                    <div>
                       Deskripsi :
                     </div>
                   </tr><br>

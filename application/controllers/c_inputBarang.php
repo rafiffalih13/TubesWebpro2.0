@@ -36,6 +36,7 @@ class c_inputBarang extends CI_Controller {
                   $nama_barang = $this->input->post('namaBarang');
                   $harga = $this->input->post('harga');
                   $deskripsi = $this->input->post('dess');
+                  $kategori = $this->input->post('kategori');
                   $id = $id + 1;
                   $images = $file['file_name'];
                   $data = array(
@@ -43,7 +44,8 @@ class c_inputBarang extends CI_Controller {
                     'nama_barang' => $nama_barang,
                     'images' => $images,
                     'harga' => $harga,
-                    'deskripsi' => $deskripsi
+                    'deskripsi' => $deskripsi,
+                    'kategori' => $kategori
                     );
                   $this->m_inputBarang->input_data($data,'barang');
                   $this->load->view('v_inputBarangSuccess');
