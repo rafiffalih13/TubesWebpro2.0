@@ -17,7 +17,7 @@
 
     <!-- CSS NAVBAR -->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/navbar.css" />
-    
+
     <!-- ICON -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
@@ -26,8 +26,16 @@
 
   <body>
 
+
     <?php
-        include_once("navbar.php");    
+      if($this->session->userdata('username') == ''){
+        include_once("navbar.php");
+        
+      }else{
+        include_once("navPembeli.php");
+      }
+
+        
     ?>
 
     <header>
@@ -39,24 +47,24 @@
         </ol>
         <div class="carousel-inner" role="listbox">
           <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
+          <div class="carousel-item active" style="background-image: url(<?php echo base_url();?>assets/img/static1.squarespace.com.jpg)">
             <div class="carousel-caption d-none d-md-block">
-              <h3>First Slide</h3>
-              <p>This is a description for the first slide.</p>
+              <h3>Pakaian</h3>
+              <p>Pilih Gayamu Sekarang </p>
             </div>
           </div>
           <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+          <div class="carousel-item" style="background-image: url(<?php echo base_url();?>assets/img/laptop.jpg)">
             <div class="carousel-caption d-none d-md-block">
-              <h3>Second Slide</h3>
-              <p>This is a description for the second slide.</p>
+              <h3>Komputer</h3>
+              <p>Pilih Komputermu Sekarang</p>
             </div>
           </div>
           <!-- Slide Three - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+          <div class="carousel-item" style="background-image: url(<?php echo base_url();?>assets/img/Bao-Bao-Holder3.jpg)">
             <div class="carousel-caption d-none d-md-block">
-              <h3>Third Slide</h3>
-              <p>This is a description for the third slide.</p>
+              <h3>Makanan</h3>
+              <p>Pilih Makananmu Sekarang</p>
             </div>
           </div>
         </div>
@@ -74,17 +82,25 @@
     <!-- Page Content -->
     <div class="container">
 
+      <br>
+      <center>
+          <h1 class="my-4">Produk Terbaru </h1>
+          <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident,<br> perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse</p> -->
+      </center>
+      <br>
+      
       <!-- baris pertama with loop -->
       <div class="row">
-        <?php 
+        <?php
           $i =0;
           foreach ($barang as $b) {
             $i++;
             if ($i>6) break;
         ?>
-        
+
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
+<<<<<<< HEAD
             <a href="#"><img class="card-img-top" src="<?php echo base_url();?>assets/images/<?php echo $b->images ?>" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
@@ -92,12 +108,21 @@
               </h4>
               <p style="font-size: 12px">$b->nama_toko</p>
               <p class="card-text">$b->harga</p>
+=======
+            <a href="#"><img class="card-img-top" src="<?php echo base_url();?>assets/img/<?php echo $b->images;?>" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#"><?php echo $b->nama_barang;?></a>
+              </h4>
+              <p style="font-size: 12px"><?php echo $b->nama_toko;?></p>
+              <p class="card-text">Rp <?php echo $b->harga;?>,-</p>
+>>>>>>> 8a58b0c4e8649f8e97436d6d4ed9fa9c55bdd0bb
               <a href="#" class="btn btn-primary">Learn More</a>
             </div>
           </div>
         </div>
 
-        <?php 
+        <?php
           }
         ?>
       </div>
@@ -105,13 +130,8 @@
       <!-- end baris pertama -->
 
 
-      <br>
-      <center>
-          <h1 class="my-4">Produk Terbaru </h1>
-          <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident,<br> perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse</p> -->
-      </center>
-      <br>
-        
+      
+
       <div class="row">
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
@@ -120,7 +140,11 @@
               <h4 class="card-title">
                 <a href="#">Project One</a>
               </h4>
+<<<<<<< HEAD
               <p style="font-size: 12px">RP 100.000</p>
+=======
+              <p style="font-size: 12px">RP 100</p>
+>>>>>>> 8a58b0c4e8649f8e97436d6d4ed9fa9c55bdd0bb
               <p class="card-text">RP 100.000</p>
               <a href="#" class="btn btn-primary">Learn More</a>
             </div>
@@ -186,7 +210,7 @@
     <!-- /.container -->
 
     <!-- Footer -->
-    
+
     <footer class="py-5 bg-dark">
       <div class="container">
         <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
@@ -195,8 +219,8 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="jquery/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="<?php echo base_url();?>assets/jquery/jquery.min.js"></script>
+    <script src="<?php echo base_url();?>assets/js/bootstrap.bundle.min.js"></script>
 
   </body>
 
