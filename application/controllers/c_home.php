@@ -21,7 +21,7 @@
 		public function SearchBarang(){
 			$src = $this->input->get('src');
 			$data = array(
-				'title' => '$src',
+				'title' => $src,
 				'barang' => $this->m_home->search($src)
 			);
 			$this->load->view('v_search',$data);	
