@@ -84,7 +84,7 @@
 
       <br>
       <center>
-          <h1 class="my-4">Produk Terbaru </h1>
+          <h1 class="my-4">Komputer</h1>
           <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident,<br> perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse</p> -->
       </center>
       <br>
@@ -95,19 +95,19 @@
           $i =0;
           foreach ($barang as $b) {
             $i++;
-            if ($i>6) break;
+            if (($i>6) && ($b->kategori==komputer)) break;
         ?>
 
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="<?php echo base_url();?>assets/images/<?php echo $b->images ?>" alt=""></a>
+            <a href="#"><img class="card-img-top" style="min-height: 250px; max-width: auto; overflow: hidden;" src="<?php echo base_url();?>assets/images/<?php echo $b->images ?>" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <a href="#"><?php echo $b->nama_barang; ?></a>
               </h4>
               <p style="font-size: 12px"><?php echo $b->nama_toko; ?></p>
               <p class="card-text"><?php echo $b->harga; ?></p>
-              <a href="#" class="btn btn-primary">Learn More</a>
+              <a href="#" class="btn btn-primary">Buy!</a>
             </div>
           </div>
         </div>
