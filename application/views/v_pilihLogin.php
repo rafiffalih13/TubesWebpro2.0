@@ -40,20 +40,20 @@
       <div class="row">
         <div class="col-lg-6 col-sm-6 ">
           <div class="card h-100 bgc">
-            <a href="<?php echo site_url('c_daftar/v_penjual')?>"><img class="card-img-top" src="<?php echo base_url();?>assets/img/seller.png" alt=""></a>
+            <a href="<?php echo site_url('c_login/view_login')?>"><img class="card-img-top" src="<?php echo base_url();?>assets/img/seller.png" alt=""></a>
             <div class="card-body bgl">
               <h4 class="card-title">
-                <a href="<?php echo site_url('c_daftar/v_penjual')?>">Penjual</a>
+                <a href="<?php echo site_url('c_login/view_login')?>">Penjual</a>
               </h4>
             </div>
           </div>
         </div>
         <div class="col-lg-6 col-sm-6 ">
           <div class="card h-100 bgc">
-            <a href="<?php echo site_url('c_daftar/v_pembeli')?>"><img class="card-img-top" src="<?php echo base_url();?>assets/img/buyer.png" alt=""></a>
+            <a href="<?php echo site_url('c_login/view_login')?>"><img class="card-img-top" src="<?php echo base_url();?>assets/img/buyer.png" alt=""></a>
             <div class="card-body bgl">
               <h4 class="card-title">
-                <a href="<?php echo site_url('c_daftar/v_pembeli')?>">Pembeli</a>
+                <a href="<?php echo site_url('c_login/view_login')?>">Pembeli</a>
               </h4>
             </div>
           </div>
