@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+<?php
+  include 'navbar.php';
+ ?>
+=======
+>>>>>>> 8a58b0c4e8649f8e97436d6d4ed9fa9c55bdd0bb
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -30,13 +36,18 @@
         <div class="container">
           <div class="login100-form-title" style="background-image: url(<?php echo base_url();?>assets/img/static1.squarespace.com.jpg);">
             <span id="judul">
+<<<<<<< HEAD
+              <h1 style="color: white;"><b>Input Barang</b></h1>
+            </span>
+          </div>
+=======
               <h1 style="color:white"><b>Input Barang</b></h1>
             </span>
           </div>
 
 
+>>>>>>> 8a58b0c4e8649f8e97436d6d4ed9fa9c55bdd0bb
                 <?php echo form_open_multipart('c_inputBarang/do_upload');?>
-
               <form id="form2" method="post">
                 <table class="table" border="0">
                   <tr>
