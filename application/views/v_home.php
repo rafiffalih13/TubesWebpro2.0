@@ -26,12 +26,13 @@
 
   <body>
 
+
     <?php
-      if($this->session != ''){
-        include_once("navPembeli.php");
+      if($this->session->userdata('username') == ''){
+        include_once("navbar.php");
         
       }else{
-        include_once("navbar.php");
+        include_once("navPembeli.php");
       }
 
         
