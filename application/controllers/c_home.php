@@ -18,10 +18,11 @@
 			$this->load->view('v_home',$data);
 		}
 
-		public function SearchBarang($barang){
+		public function SearchBarang(){
+			$src = $this->input->post('src');
 			$data = array(
-				'title' => '$barang',
-				'barang' => $this->m_home->search($barang)
+				'title' => '$src',
+				'barang' => $this->m_home->search($src)
 			);
 			$this->load->view('v_search',$data);	
 		}
