@@ -50,7 +50,7 @@
           </ul>
           <ul class="nav navbar-nav mx-auto">
             <li class="nav-item">
-              <form class="form-inline my-2 my-lg-0">
+              <form class="form-inline my-2 my-lg-0" action="<?php echo site_url('c_home/SearchBarang') ?>">
                   <input class="form-control mr-sm-2 cari" type="search" placeholder="Cari produk" aria-label="Search">
                   <button class="btn btn-info my-2 my-sm-0" type="submit"><i class="fa fa-search"></i><span>  </span>Cari</button>
                 </form>

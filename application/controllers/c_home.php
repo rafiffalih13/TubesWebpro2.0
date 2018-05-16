@@ -23,7 +23,7 @@
 				'title' => '$barang',
 				'barang' => $this->m_home->search($barang)
 			);
-			$this->load->view('v_home',$data);	
+			$this->load->view('v_search',$data);	
 		}
 
 		public function view_login(){
