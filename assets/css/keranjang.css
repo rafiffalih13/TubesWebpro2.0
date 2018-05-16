@@ -51,6 +51,7 @@ h1{
 
 #plus, #min{
   display: inline;
+  border: 2px;
 }
 
 .container{

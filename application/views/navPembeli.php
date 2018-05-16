@@ -49,7 +49,7 @@
                  Akun
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                <a class="dropdown-item" data-target='#edit'>Profil</a>
+                <a class="dropdown-item" href="#"><?php echo $this->session->userdata('username'); ?></a>
                 <a class="dropdown-item" href="#">Daftar Produk</a>
                 <a class="dropdown-item" href="#">Pambah Produk</a>
                 <a class="dropdown-item" href="#">Logout</a>
@@ -73,7 +73,6 @@
                         <label class="control-label" for="nim">id</label>
                         <input type="text" class="form-control" disabled value="dfgd" id="nim">
                         <input type="hidden" name="nim" class="form-control" value="dfgd" id="nim" required>
-
                     </div>
                     <div class="form-group">
                         <label class="control-label" for="nama">Nama</label>

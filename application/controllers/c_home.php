@@ -6,6 +6,8 @@
 		function __construct(){
 			parent::__construct();
 			$this->load->model('m_home');
+			$this->load->helper('form');
+			$this->load->library('session');
 		}
 
 		public function index(){
@@ -17,7 +19,7 @@
 		}
 
 		public function view_login(){
-			$this->load->view();
+			$this->load->view('login');
 		}
 
 		public function view_daftar(){

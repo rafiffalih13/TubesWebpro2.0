@@ -22,17 +22,18 @@
 					</a>
 					
 				</div>
-
-				<form class="login100-form validate-form">
+				<?php echo form_open('c_login/login');?>
+				<form class="login100-form validate-form" method="POST" action="<?php echo base_url(). 'index.php/c_login/login'; ?>">
+				
 					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
 						<span class="label-input100">Username</span>
-						<input class="input100" type="text" name="username" placeholder="Enter username">
+						<input class="input100" type="text" name="username" placeholder="Enter username" value="">
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
 						<span class="label-input100">Password</span>
-						<input class="input100" type="password" name="pass" placeholder="Enter password">
+						<input class="input100" type="password" name="password" placeholder="Enter password" value="">
 						<span class="focus-input100"></span>
 					</div>
 
