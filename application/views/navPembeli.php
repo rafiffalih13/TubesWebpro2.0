@@ -52,7 +52,7 @@
                 <a class="dropdown-item" href="#"><?php echo $this->session->userdata('username'); ?></a>
                 <a class="dropdown-item" href="#">Daftar Produk</a>
                 <a class="dropdown-item" href="#">Pambah Produk</a>
-                <a class="dropdown-item" href="#">Logout</a>
+                <a class="dropdown-item" href="<?php echo site_url('c_logout/logout') ?>">Logout</a> 
               </div>
             </li>
             <li class="nav-item" style="margin-left: 15px"><a href="#" style="word-spacing: 3px" class="nav-link"><span> </span><span>  </span><span>  </span></a></li>

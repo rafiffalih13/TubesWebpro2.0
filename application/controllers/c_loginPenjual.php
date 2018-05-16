@@ -5,18 +5,15 @@
 
 		function __construct(){
 			parent::__construct();
-			$this->load->model('m_login');
+			$this->load->model('m_loginPenjual');
 			$this->load->helper(array('form', 'url'));
 			$this->load->library('form_validation');
 			$this->load->library('session');
 		}
 
-		public function index(){
-			$this->load->view("v_pilihLogin");
-		}
 
 		public function view_login(){
-			$this->load->view("v_login");
+			$this->load->view("v_loginPenjual");
 		}
 
 		public function login() {
@@ -42,11 +39,11 @@
 				$username = $this->input->post('username');
 				$password = $this->input->post('password');
 				
-				if ($this->m_login->login($username, $password)) {
+				if ($this->m_loginPenjual->login($username, $password)) {
 					$this->session->unset_userdata('username');
 					
-					$user_id = $this->m_login->get_user_id_from_username($username);
-					$user    = $this->m_login->get_user($user_id);
+					$user_id = $this->m_loginPenjual->get_user_id_from_username($username);
+					$user    = $this->m_loginPenjual->get_user($user_id);
 					
 					// set session user datas
 					//$_SESSION['user_id']      = (int)$user->username;
