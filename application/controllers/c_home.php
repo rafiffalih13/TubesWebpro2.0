@@ -19,7 +19,7 @@
 		}
 
 		public function view_login(){
-			$this->load->view('login');
+			redirect('c_login/index');
 		}
 
 		public function view_daftar(){

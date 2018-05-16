@@ -11,6 +11,10 @@
 			$this->load->library('session');
 		}
 
+		public function index(){
+			$this->load->view("v_login");
+		}
+
 		public function login() {
 		
 			// create the data object

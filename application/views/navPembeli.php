@@ -65,7 +65,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal"></button>
-                    <h4 class="modal-title">Edit Data Mahasiswa</h4>
+                    <h4 class="modal-title">Edit </h4>
                 </div>
                 <?php echo form_open("home/edit"); ?>
                 <div class="modal-body">
