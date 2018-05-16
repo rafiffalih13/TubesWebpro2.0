@@ -29,7 +29,7 @@
     
     <nav class="navbar text-white fixed-top navbar-expand-lg navbar-info bg-info fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="<?php echo base_url();?>assets/img/logo.png" alt="" width="auto" height="35"></a>
+        <a class="navbar-brand" href="index"><img src="<?php echo base_url();?>assets/img/logo.png" alt="" width="auto" height="35"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="coba fa fa-reorder"></span>
         </button>
@@ -50,10 +50,10 @@
           </ul>
           <ul class="nav navbar-nav mx-auto">
             <li class="nav-item">
-              <form class="form-inline my-2 my-lg-0">
-                  <input class="form-control mr-sm-2 cari" type="search" placeholder="Cari produk" aria-label="Search">
-                  <button class="btn btn-info my-2 my-sm-0" type="submit"><i class="fa fa-search"></i><span>  </span>Cari</button>
-                </form>
+              <form class="form-inline my-2 my-lg-0" action="<?php echo site_url('c_home/SearchBarang') ?>" method="GET">
+                <input class="form-control mr-sm-2 cari" type="search" placeholder="Cari produk" aria-label="Search" name="src">
+                <button class="btn btn-info my-2 my-sm-0" type="submit"><i class="fa fa-search"></i><span>  </span>Cari</button>
+              </form>
           </li>
           </ul>
           

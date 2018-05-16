@@ -18,13 +18,27 @@
 			$this->load->view('v_home',$data);
 		}
 
+		public function SearchBarang(){
+			$src = $this->input->get('src');
+			$data = array(
+				'title' => $src,
+				'barang' => $this->m_home->search($src)
+			);
+			$this->load->view('v_search',$data);	
+		}
+
 		public function view_login(){
-			$this->load->view('login');
+			redirect('c_login/index');
 		}
 
 		public function view_daftar(){
 			redirect('c_daftar/index');
 		}
+
+		public function logout(){
+            $this->session->session_destroy();
+            redirect('c_home/index');
+        }  
 
 	}
 ?>

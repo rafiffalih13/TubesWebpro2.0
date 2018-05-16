@@ -1,4 +1,11 @@
+<<<<<<< HEAD
+<?php
+  include 'navbar.php';
+ ?>
+ <!DOCTYPE html>
+=======
 <!DOCTYPE html>
+>>>>>>> 8a58b0c4e8649f8e97436d6d4ed9fa9c55bdd0bb
  <html lang="en" dir="ltr">
    <head>
      <meta charset="utf-8">
@@ -21,6 +28,15 @@
      <div class="container">
        <div class="login100-form-title" style="background-image: url(<?php echo base_url();?>assets/img/2017-11-15_store-slider-sea-1600x583_desktop_4.jpg);">
          <span id="judul">
+<<<<<<< HEAD
+           <h1 style="color: white;"><b>BARANG SUKSES DI INPUTKAN</b></h1>
+         </span>
+       </div>
+       <div style="text-align:center;">
+         <a href="<?php echo base_url()."index.php/c_inputBarang"; ?>"> Input Barang Lagi </a>
+          |
+         <a href="<?php echo base_url(); ?>">Kembali ke halaman utama </a>
+=======
            <h1 style="color:white"><b>BARANG SUKSES DI INPUTKAN</b></h1>
          </span>
        </div>
@@ -28,6 +44,7 @@
          <a href="<?php echo base_url()."index.php/c_inputBarang"; ?>"> Input Barang Lagi </a>
           |
         <a href="<?php echo base_url(); ?>"> Kembali Ke Halaman Utama </a>
+>>>>>>> 8a58b0c4e8649f8e97436d6d4ed9fa9c55bdd0bb
        </div>
 
      </div>

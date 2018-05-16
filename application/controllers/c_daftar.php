@@ -33,6 +33,7 @@
 			$alamat = $this->input->post('alamat');
 			$cek = $this->m_akun_pembeli->cekuser($username);
 
+
 			if ($cek != $username) {
 				$data = array(
 					'username' => $username,
@@ -43,15 +44,16 @@
 					'alamat' => $alamat
 				);
 				$this->form_validation->set_rules('username', 'Username', 'required');
-				//$this->form_validation->set_rules('password', 'Password', 'required');
+				$this->form_validation->set_rules('pass', 'Password', 'required');
+				$this->form_validation->set_rules('cpass', 'Confirm Password', 'required|matches[pass]');
 				$this->form_validation->set_rules('nama', 'Nama', 'required');
 				$this->form_validation->set_rules('email', 'Email', 'required');
-				$this->form_validation->set_rules('no_hp', 'No Handphone', 'required');
+				$this->form_validation->set_rules('no_hp', 'No Handphone', 'required|alphanumeric',array('alphanumeric' => 'You must fill Phone Number with numeric',));
 				$this->form_validation->set_rules('alamat', 'Alamat', 'required');
 
 				if ($this->form_validation->run() == TRUE)
                 {
-                      $this->m_akun_pembeli->simpan_data($data,'akun_pembeli');
+                     $this->m_akun_pembeli->simpan_data($data,'akun_pembeli');
 					$this->load->view("v_daftarsucsess");
                 }
                 else
@@ -72,7 +74,7 @@
 			$sel_email = $this->input->post('email');
 			$sel_no_hp = $this->input->post('no_hp');
 			$sel_cek = $this->m_akun_penjual->cekuser($sel_username);
-			if ($cek != $username) {
+			if ($sel_cek != $sel_username) {
 				$data = array(
 					'username' => $sel_username,
 					'password' => $sel_pass,
@@ -81,8 +83,23 @@
 					'email' => $sel_email,
 					'no_hp' => $sel_no_hp
 				);
-				$this->m_akun_penjual->simpan_data($sel_data,'akun_penjual');
-				$this->load->view("v_daftarsucsess");
+				$this->form_validation->set_rules('username', 'Username', 'required');
+				$this->form_validation->set_rules('pass', 'Password', 'required');
+				$this->form_validation->set_rules('cpass', 'Confirm Password', 'required|matches[pass]');
+				$this->form_validation->set_rules('nama_penjual', 'Nama Penjual', 'required');
+				$this->form_validation->set_rules('nama_toko', 'Nama Toko', 'required');
+				$this->form_validation->set_rules('email', 'Email', 'required');
+				$this->form_validation->set_rules('no_hp', 'No Handphone', 'required|alphanumeric',array('alphanumeric' => 'You must fill Phone Number with numeric',));
+
+				if ($this->form_validation->run() == TRUE)
+                {
+					$this->m_akun_penjual->simpan_data($data,'akun_penjual');
+					$this->load->view("v_daftarsucsess");
+                }
+                else
+                {
+                    $this->load->view('v_daftarpen');
+                }
 			}else{
 				echo "gagal";
 			}

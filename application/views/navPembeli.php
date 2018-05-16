@@ -36,10 +36,10 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="nav navbar-nav mx-auto">
             <li class="nav-item">
-              <form class="form-inline my-2 my-lg-0">
-                  <input class="form-control mr-sm-2 cari" type="search" placeholder="Cari produk" aria-label="Search">
-                  <button class="btn btn-info my-2 my-sm-0" type="submit"><i class="fa fa-search"></i><span>  </span>Cari</button>
-                </form>
+              <form class="form-inline my-2 my-lg-0" action="<?php echo site_url('c_home/SearchBarang') ?>" method="GET">
+                <input class="form-control mr-sm-2 cari" type="search" placeholder="Cari produk" aria-label="Search" name="src">
+                <button class="btn btn-info my-2 my-sm-0" type="submit"><i class="fa fa-search"></i><span>  </span>Cari</button>
+              </form>
           </li>
           </ul>
           <ul class="navbar-nav ml-auto samping">
@@ -50,9 +50,7 @@
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
                 <a class="dropdown-item" href="#"><?php echo $this->session->userdata('username'); ?></a>
-                <a class="dropdown-item" href="#">Daftar Produk</a>
-                <a class="dropdown-item" href="#">Pambah Produk</a>
-                <a class="dropdown-item" href="#">Logout</a>
+                <a class="dropdown-item" href="<?php echo site_url('c_home/logout') ?>">Logout</a> 
               </div>
             </li>
             <li class="nav-item" style="margin-left: 15px"><a href="#" style="word-spacing: 3px" class="nav-link"><span> </span><span>  </span><span>  </span></a></li>
@@ -65,7 +63,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal"></button>
-                    <h4 class="modal-title">Edit Data Mahasiswa</h4>
+                    <h4 class="modal-title">Edit </h4>
                 </div>
                 <?php echo form_open("home/edit"); ?>
                 <div class="modal-body">
