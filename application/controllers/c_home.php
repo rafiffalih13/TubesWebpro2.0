@@ -18,6 +18,15 @@
 			$this->load->view('v_home',$data);
 		}
 
+		public function SearchBarang(){
+			$src = $this->input->get('src');
+			$data = array(
+				'title' => '$src',
+				'barang' => $this->m_home->search($src)
+			);
+			$this->load->view('v_search',$data);	
+		}
+
 		public function view_login(){
 			redirect('c_login/index');
 		}
