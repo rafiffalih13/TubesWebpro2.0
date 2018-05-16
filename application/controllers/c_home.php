@@ -35,5 +35,10 @@
 			redirect('c_daftar/index');
 		}
 
+		public function logout(){
+            $this->session->session_destroy();
+            redirect('c_home/index');
+        }  
+
 	}
 ?>
