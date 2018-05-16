@@ -19,7 +19,7 @@
 		}
 
 		public function SearchBarang(){
-			$src = $this->input->post('src');
+			$src = $this->input->get('src');
 			$data = array(
 				'title' => '$src',
 				'barang' => $this->m_home->search($src)

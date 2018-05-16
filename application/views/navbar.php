@@ -29,7 +29,7 @@
     
     <nav class="navbar text-white fixed-top navbar-expand-lg navbar-info bg-info fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="<?php echo base_url();?>assets/img/logo.png" alt="" width="auto" height="35"></a>
+        <a class="navbar-brand" href="index"><img src="<?php echo base_url();?>assets/img/logo.png" alt="" width="auto" height="35"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="coba fa fa-reorder"></span>
         </button>
