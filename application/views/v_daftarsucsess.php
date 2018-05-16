@@ -28,7 +28,7 @@
 				<div style="text-align: center;">	
 					<h3>Your form was successfully submitted!</h3>
 
-					<p><?php echo anchor('c_daftar', 'Try it again!'); ?></p>
+					<p><?php echo anchor('c_login', 'Login Here'); ?></p>
 				</div>
 			</div>
 		</div>
