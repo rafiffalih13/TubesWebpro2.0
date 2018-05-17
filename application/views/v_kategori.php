@@ -43,11 +43,11 @@
 
       <br>
       <center>
-          <h1 class="my-4">Hasil Pencarian </h1>
+          <h1 class="my-4" style="text-transform: uppercase;"> <?php echo $title ?></h1>
       </center>
       <br>
       
-      <!-- search with loop -->
+      <!-- show list barang kategori with loop -->
       <div class="row">
         <?php
           $i =0;
@@ -64,7 +64,7 @@
               </h4>
               <p style="font-size: 12px"><?php echo $b->nama_toko; ?></p>
               <p class="card-text"><?php echo $b->harga; ?></p>
-              <a href="#" class="btn btn-primary">Buy!</a>
+              <a href="#" class="btn btn-primary">Learn More</a>
             </div>
           </div>
         </div>
@@ -74,7 +74,7 @@
         ?>
       </div>
 
-      <!-- end search -->
+      <!-- end loop -->
     </div>
     <!-- /.container -->
 

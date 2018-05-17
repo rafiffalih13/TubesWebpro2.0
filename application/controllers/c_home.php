@@ -49,6 +49,14 @@
 			$this->load->view('v_search',$data);	
 		}
 
+		public function kategori($kategori){
+			$data = array(
+				'title' => $kategori,
+				'barang' => $this->m_home->get_by_kategori($kategori)
+			);
+			$this->load->view('v_kategori',$data);
+		}
+
 		public function view_login(){
 			redirect('c_login/index');
 		}

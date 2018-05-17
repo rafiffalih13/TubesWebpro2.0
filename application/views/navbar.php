@@ -29,7 +29,7 @@
     
     <nav class="navbar text-white fixed-top navbar-expand-lg navbar-info bg-info fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index"><img src="<?php echo base_url();?>assets/img/logo.png" alt="" width="auto" height="35"></a>
+        <a class="navbar-brand" href="<?php echo site_url('c_home/index') ?>"><img src="<?php echo base_url();?>assets/img/logo.png" alt="" width="auto" height="35"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="coba fa fa-reorder"></span>
         </button>
@@ -40,8 +40,8 @@
                    KATEGORI
                 </a>
                 <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdownPortfolio">
-                  <a class="dropdown-item" href="#">komputer</a>
-                  <a class="dropdown-item" href="#">Pakaian</a>
+                  <a class="dropdown-item" href="<?php echo site_url('c_home/kategori/komputer') ?>">komputer</a>
+                  <a class="dropdown-item" href="<?php echo site_url('c_home/kategori/pakaian') ?>">Pakaian</a>
                   <a class="dropdown-item" href="#">Makanan</a>
                   <a class="dropdown-item" href="#">Kendaraan</a>
                   <a class="dropdown-item" href="#">Furniture</a>
