@@ -1,9 +1,15 @@
+<<<<<<< HEAD
+<?php
+  include 'navbar.php';
+ ?>
+=======
 
 <?php
   include 'navbar.php';
  ?>
 
 
+>>>>>>> a963f132bbc5ee7e0793ada5b5e1eb9cf3547f71
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -39,11 +45,15 @@
               <h1 style="color: white;"><b>Input Barang</b></h1>
             </span>
           </div>
+<<<<<<< HEAD
+          </div>
+=======
               <h1 style="color:white"><b>Input Barang</b></h1>
             </span>
           </div>
 
 
+>>>>>>> a963f132bbc5ee7e0793ada5b5e1eb9cf3547f71
                 <?php echo form_open_multipart('c_inputBarang/do_upload');?>
               <form id="form2" method="post">
                 <table class="table" border="0">
@@ -65,6 +75,21 @@
                   <tr>
                     <div>
                       <input type="number" class="form-control" placeholder="Harga Barang" id="harga0" name="harga" required>
+                    </div>
+                  </tr> <br>
+                  <tr>
+                    <div>
+                      Kategori :
+                    </div>
+                  </tr><br>
+                  <tr>
+                    <div>
+                      <select class="dropdown" name="kategori" required>
+                        <option value=""></option>
+                        <option value="pakaian">Pakaian</option>
+                        <option value="komputer">Komputer</option>
+                        <option value="makanan">Makanan</option>
+                      </select>
                     </div>
                   </tr> <br>
                   <tr>
