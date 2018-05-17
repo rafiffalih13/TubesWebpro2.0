@@ -9,7 +9,9 @@
     <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/keranjang.css">
   <!--===============================================================================================-->
   <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/bootstrap.css">
-  <script src="<?php echo base_url();?>assets/js/bootstrap.bundle.js"></script>
+  <!-- <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/js/bootstrap.bundle.js"> -->
+  <!-- <script src="<?php echo base_url();?>assets/js/bootstrap.bundle.js"></script> -->
+  <script src="<?php echo base_url();?>assets/js/bootstrap.min.js"></script>
     <title><?php echo $title; ?></title>
   </head>
   <body>
@@ -48,7 +50,7 @@
                             <button type="button" class="btn btn-default" name="min" id="min">-</button>
                             <button type="button" class="btn btn-default" name="plus" id="plus">+</button>
                           </div>
-                          <button class="btn btn-default btn-danger" data-toggle="modal" data-target="#hapus<?php echo $b->nama_barang; ?>" id="btndel"><img src="<?php echo base_url();?>assets/img/trash.jpg" id="trash"></button>
+                          <button class="btn btn-default" data-toggle="modal" data-target="#hapus<?php echo $b->nama_barang; ?>" id="btndel"><img src="<?php echo base_url();?>assets/img/trash.jpg" id="trash"></button>
                        </form>
                      </div>
                      <form action="<?php echo base_url();?>index.php/c_keranjang/done" id="form1">
@@ -100,14 +102,15 @@
         <?php
           }
           ?>
-          <div id="hapus<?php echo $b->nama_barang; ?>" class="modal fade" role="dialog">
+          <!-- modal -->
+          <!-- <div id="hapus<?php echo $b->nama_barang; ?>" class="modal fade" role="dialog">
               <div class="modal-dialog">
                   <div class="modal-content">
                       <div class="modal-header">
                           <button type="button" class="close" data-dismiss="modal"></button>
                           <h4 class="modal-title">Anda Ingin Menghapus?</h4>
                           <?php echo form_open("c_keranjang/hapus"); ?>
-                          <input type="hidden" name="nama_barang" class="form-control" value="<?php echo $b->nama_barang;?>" id="nim" required>
+                          <input type="hidden" name="nama_barang" class="form-control" value="<?php echo $b->nama_barang;?>" id="nama_barang" required>
                       </div>
                       <div class="modal-footer">
                           <button type="button" data-dismiss="modal" class="btn btn-danger">Tidak</button>
@@ -116,7 +119,7 @@
                       <?php echo form_close(); ?>
                   </div>
               </div>
-          </div>
+          </div> -->
         <?php
             } ?>
          </form>
