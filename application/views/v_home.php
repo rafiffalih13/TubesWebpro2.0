@@ -53,24 +53,30 @@
         <div class="carousel-inner" role="listbox">
           <!-- Slide One - Set the background image for this slide in the line below -->
           <div class="carousel-item active" style="background-image: url(<?php echo base_url();?>assets/img/static1.squarespace.com.jpg)">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Pakaian</h3>
-              <p>Pilih Gayamu Sekarang </p>
-            </div>
+            <a href="<?php echo site_url('c_home/kategori/pakaian') ?>">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Pakaian</h3>
+                <p>Pilih Gayamu Sekarang </p>
+              </div>
+            </a>
           </div>
           <!-- Slide Two - Set the background image for this slide in the line below -->
           <div class="carousel-item" style="background-image: url(<?php echo base_url();?>assets/img/laptop.jpg)">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Komputer</h3>
-              <p>Pilih Komputermu Sekarang</p>
-            </div>
+            <a href="<?php echo site_url('c_home/kategori/komputer') ?>">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Komputer</h3>
+                <p>Pilih Komputermu Sekarang</p>
+              </div>
+            </a>
           </div>
           <!-- Slide Three - Set the background image for this slide in the line below -->
           <div class="carousel-item" style="background-image: url(<?php echo base_url();?>assets/img/Bao-Bao-Holder3.jpg)">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Makanan</h3>
-              <p>Pilih Makananmu Sekarang</p>
-            </div>
+            <a href="<?php echo site_url('c_home/kategori/makanan') ?>">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Makanan</h3>
+                <p>Pilih Makananmu Sekarang</p>
+              </div>
+            </a>
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -115,9 +121,9 @@
         <?php
           $i =0;
           foreach ($barang as $b) {
-            $i++;
-            if ($i>6) break;
+            if ($i>=6) break;
             if ($b->kategori=='komputer') {
+              $i++;
         ?>
 
         <div class="col-lg-4 col-sm-6 portfolio-item">
@@ -166,11 +172,11 @@
       <!-- baris kedua with loop -->
       <div class="row">
         <?php
-          $i =0;
+          $i = 0;
           foreach ($barang as $b) {
-            $i++;
-            if ($i>6) break;
+            if ($i>=6) break;
             if ($b->kategori=='pakaian') {
+              $i++;
         ?>
 
         <div class="col-lg-4 col-sm-6 portfolio-item">
@@ -222,9 +228,9 @@
         <?php
           $i =0;
           foreach ($barang as $b) {
-            $i++;
-            if ($i>6) break;
+            if ($i>=6) break;
             if ($b->kategori=='makanan') {
+              $i++;
         ?>
 
         <div class="col-lg-4 col-sm-6 portfolio-item">
@@ -276,9 +282,9 @@
         <?php
           $i =0;
           foreach ($barang as $b) {
-            $i++;
-            if ($i>6) break;
-            if ($b->kategori=='pakaian') {
+            if ($i>=6) break;
+            if ($b->kategori=='kendaraan') {
+              $i++;
         ?>
 
         <div class="col-lg-4 col-sm-6 portfolio-item">
@@ -330,9 +336,9 @@
         <?php
           $i =0;
           foreach ($barang as $b) {
-            $i++;
-            if ($i>6) break;
+            if ($i>=6) break;
             if ($b->kategori=='furniture') {
+              $i++;
         ?>
 
         <div class="col-lg-4 col-sm-6 portfolio-item">
