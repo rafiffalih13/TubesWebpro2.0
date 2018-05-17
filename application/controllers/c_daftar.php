@@ -34,7 +34,7 @@
 			$cek = $this->m_akun_pembeli->cekuser($username);
 
 
-			if ($cek != $username) {
+			if ($cek == FALSE) {
 				$data = array(
 					'username' => $username,
 					'password' => $pass,
@@ -74,7 +74,8 @@
 			$sel_email = $this->input->post('email');
 			$sel_no_hp = $this->input->post('no_hp');
 			$sel_cek = $this->m_akun_penjual->cekuser($sel_username);
-			if ($sel_cek != $sel_username) {
+			
+			if ($sel_cek == FALSE) {
 				$data = array(
 					'username' => $sel_username,
 					'password' => $sel_pass,
@@ -101,7 +102,7 @@
                     $this->load->view('v_daftarpen');
                 }
 			}else{
-				echo "gagal";
+				$this->load->view("v_daftarfail");;
 			}
 		}
 
