@@ -22,8 +22,14 @@
                     $query = $this->db->query("SELECT barang.id_barang, barang.username, barang.nama_barang, barang.images, barang.harga, barang.kategori, akun_penjual.nama_toko FROM barang JOIN akun_penjual ON barang.username = akun_penjual.username;");
 					return $query->result();
                 }
+
                 public function search($barang){
                     $query = $this->db->query("SELECT barang.id_barang, barang.username, barang.nama_barang, barang.images, barang.harga, barang.kategori, akun_penjual.nama_toko FROM barang JOIN akun_penjual ON barang.username = akun_penjual.username WHERE barang.nama_barang LIKE '%$barang%';");
+                    return $query->result();
+                }
+
+                public function get_by_kategori($kategori){
+                    $query = $this->db->query("SELECT barang.id_barang, barang.username, barang.nama_barang, barang.images, barang.harga, barang.kategori, akun_penjual.nama_toko FROM barang JOIN akun_penjual ON barang.username = akun_penjual.username WHERE barang.kategori='$kategori';");
                     return $query->result();
                 }
 

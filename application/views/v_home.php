@@ -12,7 +12,7 @@
     <!-- Bootstrap core CSS -->
     <link href="<?php echo base_url();?>assets/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
+    <!-- Custom styles -->
     <link href="<?php echo base_url();?>assets/css/modern-business.css" rel="stylesheet">
 
     <!-- CSS NAVBAR -->
@@ -32,7 +32,12 @@
         include_once("navbar.php");
         
       }else{
-        include_once("navPembeli.php");
+        if($jenis == 'penjual'){
+          include_once("navPembeli.php");
+        }else {
+          include_once("navPenjual.php");
+        }
+        
       }
 
         
@@ -86,6 +91,7 @@
       <br>
         <center>
             <h1 class="my-4">Komputer</h1>
+
             <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident,<br> perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse</p> -->
         </center>
       <br>
