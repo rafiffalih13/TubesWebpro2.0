@@ -102,7 +102,7 @@
 
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" style="min-height: 250px; max-width: auto; overflow: hidden;" src="<?php echo base_url();?>assets/images/<?php echo $b->images ?>" alt=""></a>
+            <a href="#"><img class="card-img-top" style="min-height: 250px; max-height: 250px; max-width: auto; overflow: hidden;" src="<?php echo base_url();?>assets/images/<?php echo $b->images ?>" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <a href="#"><?php echo $b->nama_barang; ?></a>
