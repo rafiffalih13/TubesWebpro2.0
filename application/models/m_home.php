@@ -19,7 +19,7 @@
 					// $this->db->join('akun_penjual', 'barang.username = akun_penjual.username');
 					// $query = $this->db->get();
 
-                    $query = $this->db->query("SELECT barang.id_barang, barang.username, barang.nama_barang, barang.images, barang.harga, barang.kategori, akun_penjual.nama_toko FROM barang JOIN akun_penjual ON barang.username = akun_penjual.username;");
+                    $query = $this->db->query("SELECT barang.id_barang, barang.username, barang.nama_barang, barang.images, barang.harga, barang.kategori, akun_penjual.nama_toko FROM barang JOIN akun_penjual ON barang.username = akun_penjual.username ORDER BY barang.id_barang DESC;");
 					return $query->result();
                 }
 

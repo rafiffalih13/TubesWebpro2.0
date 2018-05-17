@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 17, 2018 at 06:33 AM
+-- Generation Time: May 17, 2018 at 11:17 AM
 -- Server version: 10.1.28-MariaDB
 -- PHP Version: 7.1.11
 
@@ -64,7 +64,10 @@ CREATE TABLE `akun_penjual` (
 --
 
 INSERT INTO `akun_penjual` (`username`, `password`, `nama_penjual`, `nama_toko`, `email`, `no_hp`) VALUES
-('orang', 'orang', 'bukanorang', 'tokoorang', 'orang@orang.com', '085608560856');
+('dimas', 'dimas', 'dimas', 'tokodimas', 'dimas@gmail.com', '066666666666'),
+('neneng', 'neneng', 'neneng', 'toko neneng', 'nng@gmail.com', '086868686868'),
+('orang', 'orang', 'bukanorang', 'tokoorang', 'orang@orang.com', '085608560856'),
+('rapip', 'rapip', 'rapip', 'tokorapip', 'rapip@gmail.com', '088888888888');
 
 -- --------------------------------------------------------
 
@@ -87,13 +90,18 @@ CREATE TABLE `barang` (
 --
 
 INSERT INTO `barang` (`id_barang`, `username`, `nama_barang`, `images`, `harga`, `deskripsi`, `kategori`) VALUES
-('1', 'orang', 'laptop', 'laptop.jpg', 100000, 'wah ga tau', 'komputer'),
-('2', '', 'dfvdv', '1_md5YYw2WZ39LWnDtE2Vb5A1.png', 123, 'Masukkan deskripsi barang asdfsnda', ''),
-('3', '', 'svg', '1_md5YYw2WZ39LWnDtE2Vb5A2.png', 213, 'Masukkan deskripsi dgbdbarang anda', 'pakaian'),
-('4', '', 'fsdf', '_77388838_006508633-14.jpg', 3423, 'Masukkan defeskripsi barang anda', 'pakaian'),
-('5', '', 'sd', 'About_-_Konten_140915001.jpg', 13, 'Masukfskan deskripsi barang anda', 'pakaian'),
-('6', '', 'dc', 'DSYZL9SWsAAUPBt.jpg', 123, 'Masukkan deskripsdcsi barang anda', 'pakaian'),
-('7', '', 'edf', 'DSYZL9cXUAERZBk1.jpg', 123, 'Masuksdfkan deskripsi barang anda', 'pakaian');
+('01', 'orang', 'laptop murah', 'laptop.jpg', 100000, 'wah ga tau', 'komputer'),
+('02', 'orang', 'laptop 1M', 'lenovo-laptop-legion-y520-15-front.png', 1000000000, 'Masukkan deskripsi barang asdfsnda', 'komputer'),
+('03', 'rapip', 'laptop agak murah', '1xe59pa.jpg', 10000000, 'Masukkan deskripsi dgbdbarang anda', 'komputer'),
+('04', 'rapip', 'PC bagus', 'u_10164365.jpg', 100000000, 'Masukkan defeskripsi barang anda', 'komputer'),
+('05', 'dimas', 'PC set', 'PC-studia.jpg', 13000000, 'Masukfskan deskripsi barang anda', 'komputer'),
+('06', 'dimas', 'PC mahal', '16-CyberPowerPC-Gaming-Desktop-SOURCE-Amazon.jpg', 100000000, 'Masukkan deskripsdcsi barang anda', 'komputer'),
+('07', 'neneng', 'PC gaming', 'amdgamepc_1.jpg', 12300000, 'Masuksdfkan deskripsi barang anda', 'komputer'),
+('08', 'neneng', 'kaos', 'kaos-polos-katun-pria-o-neck-size-s-81402b-or-t-shirt-red-22.jpg', 50000, 'kaos polos', 'pakaian'),
+('09', 'orang', 'jaket', 'jaket-almasy-biru-1_01956f9d-9080-4590-a46e-93c165524a69_394x.jpg', 100000, 'jaket', 'pakaian'),
+('10', 'dimas', 'kemeja', '10740350.jpg', 100000, 'kemeja', 'pakaian'),
+('11', 'rapip', 'basreng ma*cih', 'basreng1-510x600.png', 15000, 'basreng level 100', 'makanan'),
+('12', 'neneng', 'sale pisang', 'download.jpg', 10000, 'sale pisang enak', 'makanan');
 
 -- --------------------------------------------------------
 
