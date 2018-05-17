@@ -48,7 +48,7 @@
 				$this->form_validation->set_rules('cpass', 'Confirm Password', 'required|matches[pass]');
 				$this->form_validation->set_rules('nama', 'Nama', 'required');
 				$this->form_validation->set_rules('email', 'Email', 'required');
-				$this->form_validation->set_rules('no_hp', 'No Handphone', 'required|alphanumeric',array('alphanumeric' => 'You must fill Phone Number with numeric',));
+				$this->form_validation->set_rules('no_hp', 'No Handphone', 'required|numeric',array('numeric' => 'You must fill Phone Number with numeric',));
 				$this->form_validation->set_rules('alamat', 'Alamat', 'required');
 
 				if ($this->form_validation->run() == TRUE)
@@ -89,7 +89,7 @@
 				$this->form_validation->set_rules('nama_penjual', 'Nama Penjual', 'required');
 				$this->form_validation->set_rules('nama_toko', 'Nama Toko', 'required');
 				$this->form_validation->set_rules('email', 'Email', 'required');
-				$this->form_validation->set_rules('no_hp', 'No Handphone', 'required|alphanumeric',array('alphanumeric' => 'You must fill Phone Number with numeric',));
+				$this->form_validation->set_rules('no_hp', 'No Handphone', 'required|numeric',array('numeric' => 'You must fill Phone Number with numeric',));
 
 				if ($this->form_validation->run() == TRUE)
                 {
