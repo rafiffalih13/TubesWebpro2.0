@@ -28,7 +28,7 @@
 
 
     <?php
-      include_once("navPenjual.php");     
+      include_once("navPembeli.php");     
     ?>
 
     <!-- Page Content -->
