@@ -50,6 +50,7 @@
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
                 <a class="dropdown-item" href="#"><?php echo $this->session->userdata('username'); ?></a>
+                <a class="dropdown-item" href="<?php echo site_url('c_inputBarang/index') ?>">Input Barang</a> 
                 <a class="dropdown-item" href="<?php echo site_url('c_home/logout') ?>">Logout</a> 
               </div>
             </li>

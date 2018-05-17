@@ -2,56 +2,12 @@
   padding-top: 100px;
 }
 
-#col2{
-  width: 500px;
-}
-
-#trash{
-  width: 30px;
-  height: 30px;
-}
-
-#sepatu{
-  width: 300px;
-  height: 300px;
-}
-
-#tas{
-  width: 400px;
-  height: 300px;
-}
-
-#btnbuy{
-  width: 300px;
-}
-
 h1{
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-#form1{
-  padding-left: 50px;
-}
-
-#gambar{
-  width: 300px;
-  height: 254px;
-}
-
-#kuantitas, #kuantitas2{
-  width: 50px;
-  text-align: center;
-  border: none;
-  background-color: white;
-  color: black;
-
-}
-
-#plus, #min{
-  display: inline;
-}
 
 .container{
   grid-row-gap: 100px;
@@ -81,4 +37,5 @@ h1{
 
 .table{
   margin-top: 20px;
+  padding-left: 50px;
 }

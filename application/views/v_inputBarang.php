@@ -3,7 +3,13 @@
   include 'navbar.php';
  ?>
 =======
->>>>>>> 8a58b0c4e8649f8e97436d6d4ed9fa9c55bdd0bb
+
+<?php
+  include 'navbar.php';
+ ?>
+
+
+>>>>>>> a963f132bbc5ee7e0793ada5b5e1eb9cf3547f71
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -36,9 +42,10 @@
         <div class="container">
           <div class="login100-form-title" style="background-image: url(<?php echo base_url();?>assets/img/static1.squarespace.com.jpg);">
             <span id="judul">
-<<<<<<< HEAD
               <h1 style="color: white;"><b>Input Barang</b></h1>
             </span>
+          </div>
+<<<<<<< HEAD
           </div>
 =======
               <h1 style="color:white"><b>Input Barang</b></h1>
@@ -46,7 +53,7 @@
           </div>
 
 
->>>>>>> 8a58b0c4e8649f8e97436d6d4ed9fa9c55bdd0bb
+>>>>>>> a963f132bbc5ee7e0793ada5b5e1eb9cf3547f71
                 <?php echo form_open_multipart('c_inputBarang/do_upload');?>
               <form id="form2" method="post">
                 <table class="table" border="0">
@@ -68,6 +75,21 @@
                   <tr>
                     <div>
                       <input type="number" class="form-control" placeholder="Harga Barang" id="harga0" name="harga" required>
+                    </div>
+                  </tr> <br>
+                  <tr>
+                    <div>
+                      Kategori :
+                    </div>
+                  </tr><br>
+                  <tr>
+                    <div>
+                      <select class="dropdown" name="kategori" required>
+                        <option value=""></option>
+                        <option value="pakaian">Pakaian</option>
+                        <option value="komputer">Komputer</option>
+                        <option value="makanan">Makanan</option>
+                      </select>
                     </div>
                   </tr> <br>
                   <tr>
