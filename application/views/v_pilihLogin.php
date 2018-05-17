@@ -45,7 +45,8 @@
 
     <!-- Page Content -->
   <center>
-      <h1 class="my-4">Pilih Jenis Akun</h1>
+      <h1 class="my-4">Pilih Jenis Akun</h1><br>
+      <h1 class="my-0">Login</h1>
   </center>
   <br>
 
