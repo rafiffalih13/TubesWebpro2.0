@@ -2,15 +2,12 @@
   class m_barang extends CI_Model{
 
     public function search($id) {
-      $this->db->select('*');
-      $this->db->where('id',$id);
-      $query = $this->db->get('barang');
-      return $query->result();
+      $query = $this->db->query("SELECT * FROM barang right JOIN akun_penjual ON barang.id_barang = $id;");
+      return $query->row();
     }
 
-    public function simpankeranjang($value='')
-    {
-      # code...
+    public function input($data,$table){
+      $this->db->insert($table,$data);
     }
   }
 ?>

@@ -63,7 +63,7 @@
                 <a href="#"><?php echo $b->nama_barang; ?></a>
               </h4>
               <p style="font-size: 12px"><?php echo $b->nama_toko; ?></p>
-              <p class="card-text"><?php echo $b->harga; ?></p>
+              <p class="card-text">Rp<?php echo $b->harga; ?>,-</p>
               <a href="#" class="btn btn-primary">Buy!</a>
             </div>
           </div>
