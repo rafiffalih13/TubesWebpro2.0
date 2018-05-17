@@ -19,5 +19,22 @@
 			$this->load->view('v_homePenjual',$data);
 		}
 
+		public function edit_barang($id){
+			$data = array(
+				'nama_barang' => $this->input->get('nama'),
+				'kategori' => $this->input->get('kategori'),
+				'deskripsi' => $this->input->get('deskripsi'),
+				'harga' => $this->input->get('harga')
+			);
+			$this->m_homePenjual->edit_barang($id, $data);
+			$username = $this->session->userdata('username');
+			redirect('c_homePenjual/index/'.$username);
+		}
+
+		public function delete_barang($id){
+			$this->m_homePenjual->delete_barang($id);
+			$username = $this->session->userdata('username');
+			redirect('c_homePenjual/index/'.$username);
+		}
 	}
 ?>

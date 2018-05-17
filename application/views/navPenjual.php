@@ -30,13 +30,13 @@
     
     <nav class="navbar text-white fixed-top navbar-expand-lg navbar-info bg-info fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index"><img src="<?php echo base_url();?>assets/img/logo.png" alt="" width="auto" height="35"></a>
+        <a class="navbar-brand" href="<?php echo site_url('c_homePenjual/index/').$this->session->userdata('username'); ?>"><img src="<?php echo base_url();?>assets/img/logo.png" alt="" width="auto" height="35"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="coba fa fa-reorder"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="nav navbar-nav">
-              <li class="nav-item dropdown kiri">
+              <!-- <li class="nav-item dropdown kiri">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                    KATEGORI
                 </a>
@@ -47,7 +47,7 @@
                   <a class="dropdown-item" href="#">Kendaraan</a>
                   <a class="dropdown-item" href="#">Furniture</a>
                 </div>
-              </li>
+              </li> -->
           </ul>
           <ul class="nav navbar-nav mx-auto">
             <li class="nav-item">

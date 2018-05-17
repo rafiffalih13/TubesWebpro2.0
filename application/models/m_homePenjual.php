@@ -8,5 +8,14 @@
 					return $query->result();
                 }
 
+                public function edit_barang($id, $data){
+                    $this->db->where('id_barang', $id);
+                    $this->db->update('barang', $data);
+                }
+
+                public function delete_barang($id){
+                    $this->db->where('id_barang', $id);
+                    $this->db->delete('barang');
+                }
         }
 ?>
