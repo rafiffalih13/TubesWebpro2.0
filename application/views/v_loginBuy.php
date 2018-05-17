@@ -21,7 +21,7 @@
 			<!-- div center Start -->
 			<div class="col-4 center" >
 
-				<a href="index.html">
+				<a  href="<?php echo site_url('c_home/index') ?>">
 					<img class="logo" src="<?php echo base_url();?>assets/img/logo1.png">
 				</a>
 				

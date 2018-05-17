@@ -23,10 +23,24 @@
 
     <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/pilih.css">
 
+    <style>
+      a {
+          color: #75c0cc;
+      }
+
+      .ini{
+        border:none;
+      }
+
+       a:hover {
+          color: #75c0cc;
+      }
+    </style>
+
 
   </head>
 
-  <body style="background-image: url('<?php echo base_url();?>assets/img/coba2.png');">
+  <body style="background-colour = white">
 
 
     <!-- Page Content -->
@@ -39,8 +53,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-sm-6 ">
-          <div class="card h-100 bgc">
-            <a href="<?php echo site_url('c_login/view_loginPenjual')?>"><img class="card-img-top" src="<?php echo base_url();?>assets/img/seller.png" alt=""></a>
+          <div class="card h-100 bgc ini">
+            <a href="<?php echo site_url('c_login/view_loginPenjual')?>"><img class="card-img-top" src="<?php echo base_url();?>assets/img/jual.png" alt=""></a>
             <div class="card-body bgl">
               <h4 class="card-title">
                 <a href="<?php echo site_url('c_login/view_loginPenjual')?>">Penjual</a>
@@ -49,8 +63,8 @@
           </div>
         </div>
         <div class="col-lg-6 col-sm-6 ">
-          <div class="card h-100 bgc">
-            <a href="<?php echo site_url('c_login/view_login')?>"><img class="card-img-top" src="<?php echo base_url();?>assets/img/buyer.png" alt=""></a>
+          <div class="card h-100 bgc ini">
+            <a href="<?php echo site_url('c_login/view_login')?>"><img class="card-img-top" src="<?php echo base_url();?>assets/img/beli.png" alt=""></a>
             <div class="card-body bgl">
               <h4 class="card-title">
                 <a href="<?php echo site_url('c_login/view_login')?>">Pembeli</a>

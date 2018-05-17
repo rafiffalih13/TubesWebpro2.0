@@ -42,9 +42,9 @@
                 <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdownPortfolio">
                   <a class="dropdown-item" href="<?php echo site_url('c_home/kategori/komputer') ?>">komputer</a>
                   <a class="dropdown-item" href="<?php echo site_url('c_home/kategori/pakaian') ?>">Pakaian</a>
-                  <a class="dropdown-item" href="#">Makanan</a>
-                  <a class="dropdown-item" href="#">Kendaraan</a>
-                  <a class="dropdown-item" href="#">Furniture</a>
+                  <a class="dropdown-item" href="<?php echo site_url('c_home/kategori/makanan') ?>">Makanan</a>
+                  <a class="dropdown-item" href="<?php echo site_url('c_home/kategori/kendaraan') ?>">Kendaraan</a>
+                  <a class="dropdown-item" href="<?php echo site_url('c_home/kategori/furniture') ?>">Furniture</a>
                 </div>
               </li>
           </ul>
