@@ -11,25 +11,33 @@ class c_keranjang extends CI_Controller {
   }
 
   public function index(){
+    $username = 'lala';
+    $this->session->set_userdata('username', $username);
     $data = array(
       'title' => 'keranjang',
-      'barang' => $this->m_keranjang->get_data_barang(),
       'jum' => $this->m_keranjang->jum_harga(),
       'kuantitas' => '1',
-      'ongkir' => '10000'
+      'ongkir' => '10000',
+      'username' => $this->session->userdata('username'),
+      'barang' => $this->m_keranjang->get_data_barang($this->session->userdata('username'))
     );
     $this->load->view("v_keranjang",$data);
   }
 
   public function hapus(){
-      $id = $this->input->post('id_barang');
-      $hapus = $this->m_keranjang->delete_data($id);
+      $nama_barang = $this->input->post('nama_barang');
+      $hapus = $this->m_keranjang->delete_data($nama_barang);
       if($hapus){
-          redirect('home/index');
+          $this->session->set_flashdata('alert', 'sukses_hapus');
+          redirect('c_keranjang/index');
       }else{
           echo "<script>alert('Gagal Hapus Data');</script>";
 
       }
+  }
+
+  public function done(){
+    $this->load->view('v_done');
   }
 }
  ?>

@@ -40,18 +40,19 @@ h1{
   height: 254px;
 }
 
-#kuantitas, #kuantitas2{
+#kuantitas, #kuantitas2, #kuantitas1{
   width: 50px;
   text-align: center;
   border: none;
   background-color: white;
   color: black;
-
 }
 
-#plus, #min{
-  display: inline;
-  border: 2px;
+.button{
+  background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+    display: inline-block;
 }
 
 .container{

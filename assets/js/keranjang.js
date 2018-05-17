@@ -1,11 +1,16 @@
 jQuery(function(){
   var j = jQuery;
-  var addInput = '#kuantitas';
-  var addInput2 = '#kuantitas2';
-  for (i = 1; i < cars.length; i++) {
-    var addInput+i = "#kuantitas" + i;
-}
+  var addInput = '#kuantitas1';
   var n = 1;
-  var m = 1;
+  j(addInput).val(n);
+  j('#plus1').on('click', function(){
+    j(addInput).val(++n); //penambahan value jika tekan +
+  })
 
-}
+  j('#min1').on('click', function(){
+      if (n >= 2) {
+      j(addInput).val(--n); //pengurangan value jika tekan -
+    }
+  });
+
+});

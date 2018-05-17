@@ -1,8 +1,10 @@
 <?php
 class m_keranjang extends CI_Model{
 
-  public function get_data_barang() {
-    $query = $this->db->get('barang');
+  public function get_data_barang($user) {
+    $this->db->select('*');
+    $this->db->where('username',$user);
+    $query = $this->db->get('keranjang');
     return $query->result();
   }
 
@@ -14,11 +16,10 @@ class m_keranjang extends CI_Model{
 
   }
 
-  public function delete_data($id){
-      $table = 'barang';
-      $this->db->where('id_barang', $id);
+  public function delete_data($nama_barang){
+      $table = 'keranjang';
+      $this->db->where('nama_barang', $nama_barang);
       $delete = $this->db->delete($table);
-
       if ($delete){
           return TRUE;
       }else{

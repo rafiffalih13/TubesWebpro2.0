@@ -24,13 +24,18 @@
      <div class="container">
        <div class="login100-form-title" style="background-image: url(<?php echo base_url();?>assets/img/2017-11-15_store-slider-sea-1600x583_desktop_4.jpg);">
          <span id="judul">
-           <h1 style="color: white;"><b>BARANG SUKSES DI INPUTKAN</b></h1>
+           <h1 style="color: white;"><b>TRANSAKSI SELESAI</b></h1>
+           <h3 style="color: white;"><b>Terima Kasih Telah Berbelanja Di <img src="<?php echo base_url();?>assets/img/logo.png"></b></h3>
          </span>
        </div>
        <div style="text-align:center;">
-         <a href="<?php echo base_url()."index.php/c_inputBarang"; ?>"> Input Barang Lagi </a>
+         <a href="<?php echo base_url()."index.php/c_inputBarang"; ?>"> Belanja lagi </a>
           |
          <a href="<?php echo base_url(); ?>">Kembali ke halaman utama </a>
+           <h1 style="color:white"><b>BARANG SUKSES DI INPUTKAN</b></h1>
+         </span>
+       </div>
+
      </div>
    </body>
  </html>
