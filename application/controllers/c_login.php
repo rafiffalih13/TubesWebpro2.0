@@ -112,7 +112,7 @@
 
 					
 					// user login ok
-					redirect('c_home/index');
+					redirect('c_homePenjual/index');
 					
 				} else {
 					

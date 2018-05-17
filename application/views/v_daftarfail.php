@@ -26,9 +26,9 @@
 					</a>
 				</div>
 				<div style="text-align: center;">	
-					<h3>Daftar Berhasil!!</h3>
+					<h3>Daftar Gagal</h3>
 
-					<p><?php echo anchor('c_login', 'Login Here'); ?></p>
+					<p><?php echo anchor('c_daftar', 'Daftar Disini'); ?></p>
 				</div>
 			</div>
 		</div>
