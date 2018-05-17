@@ -88,6 +88,16 @@
     <div class="container">
 
       <!-- Kategori komputer -->
+      <?php 
+        $bool = false;
+        foreach ($barang as $b) {
+          if($b->kategori=='komputer'){
+            $bool = true;
+          }
+        }
+        if($bool==true){
+       ?>
+
       <br>
         <center>
             <h1 class="my-4">Komputer</h1>
@@ -95,6 +105,10 @@
             <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident,<br> perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse</p> -->
         </center>
       <br>
+
+      <?php 
+        }
+       ?>
 
       <!-- baris pertama with loop -->
       <div class="row">
@@ -114,7 +128,7 @@
                 <a href="#"><?php echo $b->nama_barang; ?></a>
               </h4>
               <p style="font-size: 12px"><?php echo $b->nama_toko; ?></p>
-              <p class="card-text"><?php echo $b->harga; ?></p>
+              <p class="card-text">Rp<?php echo $b->harga; ?>,-</p>
               <a href="#" class="btn btn-primary">Buy!</a>
             </div>
           </div>
@@ -129,12 +143,25 @@
       <!-- end komputer -->
 
       <!-- Kategori pakaian -->
+      <?php 
+        $bool = false;
+        foreach ($barang as $b) {
+          if($b->kategori=='pakaian'){
+            $bool = true;
+          }
+        }
+        if($bool == true){
+       ?>
       <br>
         <center>
             <h1 class="my-4">Pakaian</h1>
             <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident,<br> perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse</p> -->
         </center>
       <br>
+
+      <?php 
+        }
+       ?>
 
       <!-- baris kedua with loop -->
       <div class="row">
@@ -154,7 +181,7 @@
                 <a href="#"><?php echo $b->nama_barang; ?></a>
               </h4>
               <p style="font-size: 12px"><?php echo $b->nama_toko; ?></p>
-              <p class="card-text"><?php echo $b->harga; ?></p>
+              <p class="card-text">Rp<?php echo $b->harga; ?>,-</p>
               <a href="#" class="btn btn-primary">Buy!</a>
             </div>
           </div>
@@ -169,6 +196,168 @@
       <!-- end baris kedua -->
       <!-- end pakaian -->
       
+      <!-- Kategori makanan -->
+      <?php 
+        $bool = false;
+        foreach ($barang as $b) {
+          if($b->kategori=='makanan'){
+            $bool = true;
+          }
+        }
+        if($bool == true){
+       ?>
+      <br>
+        <center>
+            <h1 class="my-4">Makanan</h1>
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident,<br> perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse</p> -->
+        </center>
+      <br>
+
+      <?php 
+        }
+       ?>
+
+      <!-- baris ketiga with loop -->
+      <div class="row">
+        <?php
+          $i =0;
+          foreach ($barang as $b) {
+            $i++;
+            if ($i>6) break;
+            if ($b->kategori=='makanan') {
+        ?>
+
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" style="min-height: 250px; max-height: 250px; max-width: auto; overflow: hidden;" src="<?php echo base_url();?>assets/images/<?php echo $b->images ?>" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#"><?php echo $b->nama_barang; ?></a>
+              </h4>
+              <p style="font-size: 12px"><?php echo $b->nama_toko; ?></p>
+              <p class="card-text">Rp<?php echo $b->harga; ?>,-</p>
+              <a href="#" class="btn btn-primary">Buy!</a>
+            </div>
+          </div>
+        </div>
+
+        <?php
+            }
+          }
+        ?>
+      </div>
+
+      <!-- end baris ketiga -->
+      <!-- end makanan -->
+
+      <!-- Kategori kendaraan -->
+      <?php 
+        $bool = false;
+        foreach ($barang as $b) {
+          if($b->kategori=='kendaraan'){
+            $bool = true;
+          }
+        }
+        if($bool == true){
+       ?>
+      <br>
+        <center>
+            <h1 class="my-4">Kendaraan</h1>
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident,<br> perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse</p> -->
+        </center>
+      <br>
+
+      <?php 
+        }
+       ?>
+
+      <!-- baris keempat with loop -->
+      <div class="row">
+        <?php
+          $i =0;
+          foreach ($barang as $b) {
+            $i++;
+            if ($i>6) break;
+            if ($b->kategori=='pakaian') {
+        ?>
+
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" style="min-height: 250px; max-height: 250px; max-width: auto; overflow: hidden;" src="<?php echo base_url();?>assets/images/<?php echo $b->images ?>" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#"><?php echo $b->nama_barang; ?></a>
+              </h4>
+              <p style="font-size: 12px"><?php echo $b->nama_toko; ?></p>
+              <p class="card-text">Rp<?php echo $b->harga; ?>,-</p>
+              <a href="#" class="btn btn-primary">Buy!</a>
+            </div>
+          </div>
+        </div>
+
+        <?php
+            }
+          }
+        ?>
+      </div>
+
+      <!-- end baris keempat -->
+      <!-- end kendaraan -->
+
+      <!-- Kategori furniture -->
+      <?php 
+        $bool = false;
+        foreach ($barang as $b) {
+          if($b->kategori=='furniture'){
+            $bool = true;
+          }
+        }
+        if($bool == true){
+       ?>
+      <br>
+        <center>
+            <h1 class="my-4">Furniture</h1>
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident,<br> perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse</p> -->
+        </center>
+      <br>
+
+      <?php 
+        }
+       ?>
+
+      <!-- baris kedua with loop -->
+      <div class="row">
+        <?php
+          $i =0;
+          foreach ($barang as $b) {
+            $i++;
+            if ($i>6) break;
+            if ($b->kategori=='furniture') {
+        ?>
+
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" style="min-height: 250px; max-height: 250px; max-width: auto; overflow: hidden;" src="<?php echo base_url();?>assets/images/<?php echo $b->images ?>" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#"><?php echo $b->nama_barang; ?></a>
+              </h4>
+              <p style="font-size: 12px"><?php echo $b->nama_toko; ?></p>
+              <p class="card-text">Rp<?php echo $b->harga; ?>,-</p>
+              <a href="#" class="btn btn-primary">Buy!</a>
+            </div>
+          </div>
+        </div>
+
+        <?php
+            }
+          }
+        ?>
+      </div>
+
+      <!-- end baris kelima -->
+      <!-- end furniture -->
+
     </div>
     <!-- /.container -->
 
