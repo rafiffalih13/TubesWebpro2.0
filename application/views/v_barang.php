@@ -63,7 +63,7 @@
 
         <!-- Modal Header -->
         <div class="modal-header">
-          <h4 class="modal-title">Anda Akan Memasukkan Barang Ini Ke Keranjang</h4>
+          <h4 class="modal-title" id="judul">Anda Akan Memasukkan Barang Ini Ke Keranjang</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
 

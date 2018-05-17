@@ -10,9 +10,7 @@
       $this->load->library('session');
     }
 
-    public function index($id = '1'){
-      $username = 'lala';
-      $this->session->set_userdata('username', $username);
+    public function index($id){
       $data = array (
         'title' => 'Detail Barang',
         'barang' => $this->m_barang->search($id),

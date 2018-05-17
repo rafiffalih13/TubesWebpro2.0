@@ -11,8 +11,6 @@ class c_keranjang extends CI_Controller {
   }
 
   public function index(){
-    $username = 'lala';
-    $this->session->set_userdata('username', $username);
     $data = array(
       'title' => 'keranjang',
       'jum' => $this->m_keranjang->jum_harga(),

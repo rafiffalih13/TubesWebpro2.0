@@ -28,13 +28,13 @@ class c_inputBarang extends CI_Controller {
                   $this->load->view('v_inputBarang', $error);
           }else{
                   $file = $this->upload->data();
-                  $id = $this->m_inputBarang->selectID('barang');
-                  $id = $id->id_barang;
+                  // $id = $this->m_inputBarang->selectID('barang');
+                  $id = NULL;
                   $nama_barang = $this->input->post('namaBarang');
                   $harga = $this->input->post('harga');
                   $deskripsi = $this->input->post('dess');
                   $kategori = $this->input->post('kategori');
-                  $id = $id + 1;
+                  // $id = $id + 1;
                   $images = $file['file_name'];
                   $data = array(
                     'id_barang' => $id,
